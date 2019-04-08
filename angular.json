@@ -132,5 +132,10 @@
       }
     }
   },
-  "defaultProject": "json-mindmap"
+  "defaultProject": "json-mindmap",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
