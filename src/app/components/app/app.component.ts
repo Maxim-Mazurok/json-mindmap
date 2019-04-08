@@ -17,8 +17,8 @@ export class AppComponent implements OnInit {
       options: {
         color: 'green',
         labels: [
-          'label1',
-          'label2'
+          'label 1',
+          'label 2'
         ]
       },
       children: [
@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
               title: 'Third level',
               options: {
                 labels: [
-                  'label3',
+                  'label 3',
                 ]
               },
               children: [
@@ -40,7 +40,7 @@ export class AppComponent implements OnInit {
                   title: '2',
                   options: {
                     labels: [
-                      'label4',
+                      'label 4',
                     ]
                   },
                 },
