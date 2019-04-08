@@ -1,9 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { NodeComponent } from './node/node.component';
-import { MindMapComponent } from './mind-map/mind-map.component';
+import { AppComponent } from './components/app/app.component';
+import { NodeComponent } from './components/node/node.component';
+import { MindMapComponent } from './components/mind-map/mind-map.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -12,9 +13,12 @@ import { MindMapComponent } from './mind-map/mind-map.component';
     MindMapComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

@@ -1,0 +1,27 @@
+<div
+  class="node-container"
+>
+  <div
+    class="node-title"
+    [style.color]="options.color"
+  >{{node.title}}</div>
+  <div
+    class="node-labels"
+    *ngIf="options.labels.length > 0 && controlsConfig.showLabels"
+  >
+    <span
+      *ngFor="let label of options.labels"
+    >{{label}}</span>
+  </div>
+</div>
+<div
+  class="nodes"
+>
+  <ng-container
+    *ngFor="let child of node.children"
+  >
+    <app-node
+      [node]="child"
+    ></app-node>
+  </ng-container>
+</div>

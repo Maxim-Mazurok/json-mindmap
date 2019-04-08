@@ -1,0 +1,13 @@
+div.container {
+  display: flex;
+
+  app-mind-map,
+  div.controls {
+    width: 50%;
+  }
+}
+
+div.controls {
+  border-left: .1em #000 solid;
+  padding-left: .5em;
+}

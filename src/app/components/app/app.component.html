@@ -1,0 +1,24 @@
+<div
+  class="container"
+>
+  <app-mind-map
+    [json]="json"
+  ></app-mind-map>
+
+  <div
+    class="controls"
+  >
+    <form
+      [formGroup]="controlsForm"
+    >
+      <label>
+        Display labels
+        <input
+          type="checkbox"
+          formControlName="showLabels"
+        >
+      </label>
+    </form>
+  </div>
+
+</div>

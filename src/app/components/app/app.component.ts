@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { ControlsService } from '../../services/controls/controls.service';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
 
 export class AppComponent implements OnInit {
@@ -12,7 +15,11 @@ export class AppComponent implements OnInit {
     {
       title: 'First level',
       options: {
-        color: 'red',
+        color: 'green',
+        labels: [
+          'label1',
+          'label2'
+        ]
       },
       children: [
         {
@@ -20,12 +27,22 @@ export class AppComponent implements OnInit {
           children: [
             {
               title: 'Third level',
+              options: {
+                labels: [
+                  'label3',
+                ]
+              },
               children: [
                 {
                   title: '1',
                 },
                 {
                   title: '2',
+                  options: {
+                    labels: [
+                      'label4',
+                    ]
+                  },
                 },
                 {
                   title: '3',
@@ -39,7 +56,7 @@ export class AppComponent implements OnInit {
     {
       title: 'First level',
       options: {
-        color: 'red',
+        color: 'blue',
       },
       children: [
         {
@@ -64,6 +81,17 @@ export class AppComponent implements OnInit {
       ]
     }
   ];
+  controlsForm = new FormGroup({
+    showLabels: new FormControl(true),
+  });
+
+  constructor(
+    private controlsService: ControlsService,
+  ) {
+    this.controlsForm.valueChanges.subscribe(newControls => {
+      this.controlsService.setConfiguration(newControls);
+    });
+  }
 
   ngOnInit() {
   }
