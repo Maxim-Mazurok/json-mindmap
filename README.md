@@ -4,7 +4,8 @@ This project aims to create highly-customizable mindmaps from JSON-file to help 
 details of the "bigger-picture".
 
 Goals for the alpha version:
-- [ ] Take a look at TopicMap and tolog, seems like a similar idea
+- [ ] Take a look at the [Topic map](https://en.wikipedia.org/wiki/Topic_map) and 
+[tolog](https://dl.acm.org/citation.cfm?id=2096521), seems like a similar idea
 - [ ] Use tags/labels for nodes (ideas) to help quickly navigate and sort mindmaps
   - [x] Add tags/labels
   - [x] Add global control to display/hide tags
