@@ -5,7 +5,7 @@ details of the "bigger-picture".
 
 Goals for the alpha version:
 - [ ] Take a look at the [Topic map](https://en.wikipedia.org/wiki/Topic_map) and 
-[tolog](https://dl.acm.org/citation.cfm?id=2096521), seems like a similar idea
+[tolog](https://dl.acm.org/doi/10.1007/11676904_17), seems like a similar idea
 - [ ] Use tags/labels for nodes (ideas) to help quickly navigate and sort mindmaps
   - [x] Add tags/labels
   - [x] Add global control to display/hide tags
